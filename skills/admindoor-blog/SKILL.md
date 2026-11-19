@@ -1,10 +1,18 @@
-# Host integration prompt — `admindoor-blog`
-
-**How to use:** open the host repo in your AI coding agent (Cursor, Claude Code, etc.), paste everything below the line, and send. The agent inspects the repo, works out whether this is a **fresh install**, an **upgrade**, or already **up to date**, asks only what it cannot infer, then implements.
-
-Maintainers: keep this file in sync with `README.md`, `docs/search.md`, and the exports in `src/`. When a feature ships (e.g. share button), add it to **Feature checklist** below.
-
 ---
+name: admindoor-blog
+description: >-
+  Integrate or upgrade the admindoor-blog package (full-stack SSG blog for the
+  Next.js App Router: listing, post, OG image, search and share routes, SEO,
+  JSON-LD, theming) in a host repo. Detects whether this is a fresh install, an
+  upgrade (including migration from the old @radianz-group/next-blog package)
+  or already current, asks only what the repo can't answer, then wires config,
+  routes, styles, redirects and verification. Use when the user asks to add a
+  blog, set up, integrate, upgrade or update admindoor-blog, or mentions
+  admindoor-blog or @radianz-group/next-blog.
+argument-hint: "[target-version]"
+---
+
+# admindoor-blog: integrate or upgrade
 
 You are an expert Next.js App Router engineer. Your job: make this repo use **`admindoor-blog`** correctly — installing it if absent, or bringing an existing integration up to date — with the smallest change that matches the host's stack and brand.
 
@@ -16,7 +24,7 @@ You are an expert Next.js App Router engineer. Your job: make this repo use **`a
 4. **Never commit secrets.** API URLs that carry keys go in env vars, never in source.
 5. **No git side effects.** Do not commit, push, or touch remotes unless the user asks in this turn.
 6. **Requirements:** Node ≥ 20, Next.js ≥ 16 (App Router), React 19, **Tailwind CSS v4** (the package's classes use v4-only syntax such as `bg-(--blog-surface)` and container queries). If the host fails any of these, stop and tell the user exactly what must change first.
-7. **Pin the installed version exactly** (no `^`/`~`) to the version you resolve in Step 1 unless the user names another.
+7. **Pin the installed version exactly** (no `^`/`~`) to the version you resolve in Step 1, unless the user names another or passed one as this skill's argument.
 8. Finish with the **Verify checklist** and a short change summary. Do not claim something works unless you ran it (typecheck/build) or say what you could not run.
 
 ## Step 1 — Detect mode (run these, don't guess)
@@ -212,7 +220,7 @@ export default async function sitemap() {
 }
 ```
 
-**Env:** add `BLOG_API_URL` to `.env.example` (never the GitHub token).
+**Env:** add `BLOG_API_URL` to `.env.example` with a placeholder value, never the real URL if it carries a key.
 
 ## Upgrade
 
@@ -225,7 +233,7 @@ export default async function sitemap() {
 
 Then, for any upgrade:
 
-1. Read the installed package's `README.md` and compare against the latest (install the new version first, then read `node_modules/admindoor-blog/README.md` for the migration notes of every version you are crossing).
+1. Install the new version first, then read `node_modules/admindoor-blog/CHANGELOG.md` for every version you are crossing (breaking changes and migration steps are listed there) and `node_modules/admindoor-blog/README.md` for current usage.
 2. Re-run the **Feature checklist**; fix each gap with the smallest edit. Preserve the host's existing config values, `ui` overrides, and brand CSS.
 3. Run the typecheck/build; fix type errors caused by renamed/removed options by reading the new `.d.ts`, not by guessing.
 4. Do not reformat or reorganize files you did not need to touch.
@@ -240,7 +248,7 @@ Then, for any upgrade:
 - [ ] Tailwind v4 `@source` points at the package `dist`.
 - [ ] `next.config`: `getBlogRedirects`, `staticPageGenerationTimeout`, `images.remotePatterns`.
 - [ ] Search (if wanted): `search.enabled` **and** `app/blog/page.tsx` with `createBlogSearchPage`.
-- [ ] **Share button** (needs a package version that includes `postPage.share` — verify with `grep -rl "getPostShareUrl" node_modules/admindoor-blog/dist`; if absent, upgrade). On by default on the post page; see _Share button_ below.
+- [ ] **Share button** on the post page: on by default, configured only through `postPage.share` (see _Share button_ below).
 - [ ] Branding via `--blog-*` tokens scoped to `.blog-root`; no colors in `createBlogConfig`.
 
 ## Share button (post page)

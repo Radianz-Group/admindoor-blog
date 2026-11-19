@@ -37,7 +37,7 @@ The example app in [`examples/minimal-next-app`](./examples/minimal-next-app) us
 1. Fork the repo and create a branch from `master`.
 2. Keep the change focused. Unrelated refactors are easier to review as separate pull requests.
 3. Add or update tests in [`tests/`](./tests) for any behavior change.
-4. Update [README.md](./README.md) or [`docs/`](./docs) when you change config options, exports or host setup.
+4. Update [README.md](./README.md), [`docs/`](./docs) and the [agent skill](./skills/admindoor-blog/SKILL.md) when you change config options, exports or host setup.
 5. Add an entry under `## [Unreleased]` in [CHANGELOG.md](./CHANGELOG.md).
 6. Make sure these pass locally, since CI runs them:
 

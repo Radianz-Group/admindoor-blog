@@ -12,6 +12,8 @@ Requires **Node ≥ 20** and **Next.js ≥ 16**.
 
 Optional weighted listing search is documented in [docs/search.md](./docs/search.md).
 
+**Using an AI coding agent?** The package ships an [agent skill](./skills/README.md) that installs or upgrades the blog in your repo: copy `node_modules/admindoor-blog/skills/admindoor-blog` into `.claude/skills/` (or your agent's equivalent) and ask it to add a blog.
+
 ## Install
 
 ```bash
