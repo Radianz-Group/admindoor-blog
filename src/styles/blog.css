@@ -1,0 +1,205 @@
+/*
+ * Design tokens for non-TipTap chrome (listing/post shells, cards, sections).
+ * Hosts override these on `.blog-root` / `[data-blog-root]`.
+ * TipTap body (`.blog-content`) is intentionally NOT wired to these tokens.
+ *
+ * Keep this file unlayered. A custom `@layer` declared before Tailwind ends up
+ * below `@layer base`, so Preflight would win over page width and TipTap styles.
+ */
+:root,
+.blog-root {
+  --blog-accent: rgb(3 105 161);
+  --blog-accent-muted: rgb(240 249 255);
+  --blog-accent-fg: rgb(7 89 133);
+  --blog-surface: rgb(255 255 255);
+  --blog-surface-muted: rgb(248 250 252);
+  --blog-page-bg: rgb(248 250 252 / 0.8);
+  --blog-border: rgb(226 232 240 / 0.8);
+  --blog-radius: 0.75rem;
+  --blog-radius-md: 0.375rem;
+  --blog-fg: rgb(15 23 42);
+  --blog-muted-fg: rgb(100 116 139);
+  --blog-subtle-fg: rgb(71 85 105);
+  --blog-focus-ring: rgb(148 163 184);
+  --blog-button-bg: rgb(15 23 42);
+  --blog-button-bg-hover: rgb(30 41 59);
+  --blog-button-fg: rgb(255 255 255);
+}
+
+/* Shared max width for blog detail page sections */
+.blog-page-width {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 72rem;
+}
+
+/* Blog post body (sanitized TipTap HTML) — separate from chrome tokens */
+.blog-content {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: rgb(51 65 85);
+}
+
+.blog-content > * + * {
+  margin-top: 1rem;
+}
+
+.blog-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 600;
+  color: rgb(15 23 42);
+}
+
+.blog-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.375;
+  font-weight: 600;
+  color: rgb(15 23 42);
+}
+
+.blog-content p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: rgb(51 65 85);
+}
+
+.blog-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.blog-content ul > * + * {
+  margin-top: 0.5rem;
+}
+
+.blog-content ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+
+.blog-content ol > * + * {
+  margin-top: 0.5rem;
+}
+
+.blog-content li {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: rgb(51 65 85);
+}
+
+.blog-content a {
+  color: rgb(3 105 161);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.blog-content a:hover {
+  text-decoration: none;
+}
+
+.blog-content img {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: auto;
+  max-width: 100%;
+  border-radius: 0.375rem;
+}
+
+.blog-content strong {
+  font-weight: 600;
+  color: rgb(15 23 42);
+}
+
+.blog-content em {
+  font-style: italic;
+}
+
+.blog-content table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+}
+
+.blog-content th,
+.blog-content td {
+  border: 1px solid rgb(226 232 240);
+  padding: 0.625rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.blog-content th {
+  font-weight: 600;
+  color: rgb(15 23 42);
+  background-color: rgb(248 250 252);
+}
+
+@media (min-width: 768px) {
+  .blog-content {
+    font-size: 1.05rem;
+    line-height: 2rem;
+  }
+
+  .blog-content h2 {
+    font-size: 1.875rem;
+  }
+
+  .blog-content h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Share dialog animations (plain CSS so hosts need no animation plugin) */
+@keyframes blog-dialog-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blog-dialog-pop {
+  /* Centering comes from Tailwind's `translate` property; don't repeat it in `transform` */
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes blog-dialog-sheet {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.blog-dialog-overlay[data-state="open"] {
+  animation: blog-dialog-fade 150ms ease-out;
+}
+.blog-dialog-content[data-state="open"] {
+  animation: blog-dialog-sheet 200ms ease-out;
+}
+@media (min-width: 640px) {
+  .blog-dialog-content[data-state="open"] {
+    animation: blog-dialog-pop 150ms ease-out;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .blog-dialog-overlay,
+  .blog-dialog-content {
+    animation: none !important;
+  }
+}

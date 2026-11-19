@@ -1,0 +1,60 @@
+import { defineConfig } from "tsup";
+
+const externalDeps = [
+  "next",
+  "next/og",
+  "sharp",
+  "react",
+  "react-dom",
+  "react/jsx-runtime",
+  "lucide-react",
+
+  "@tiptap/core",
+  "@tiptap/html",
+  "@tiptap/starter-kit",
+  "@tiptap/extension-image",
+  "@tiptap/extension-table",
+  "@tiptap/extension-table-row",
+  "@tiptap/extension-table-cell",
+  "@tiptap/extension-table-header",
+  "@tiptap/pm",
+  "sanitize-html",
+  "zod",
+  "@radix-ui/react-accordion",
+  "@radix-ui/react-dialog",
+  "@radix-ui/react-slot",
+  "class-variance-authority",
+  "clsx",
+  "tailwind-merge",
+  "admindoor-blog",
+  /^admindoor-blog\//,
+];
+
+export default defineConfig([
+  {
+    entry: {
+      index: "src/index.ts",
+      "constants/index": "src/constants/index.ts",
+      "adapters/admindoor/index": "src/adapters/admindoor/index.ts",
+      "seo/index": "src/seo/index.ts",
+      "next/index": "src/next/index.ts",
+      "next/redirects": "src/next/redirects.ts",
+    },
+    format: ["esm", "cjs"],
+    dts: true,
+    sourcemap: true,
+    clean: false,
+    splitting: false,
+    treeshake: true,
+    external: [...externalDeps, /^(\.\.\/)+components\//],
+  },
+  {
+    entry: ["src/components/**/*.ts", "src/components/**/*.tsx"],
+    outDir: "dist/components",
+    format: ["esm", "cjs"],
+    dts: true,
+    sourcemap: true,
+    bundle: false,
+    external: externalDeps,
+  },
+]);

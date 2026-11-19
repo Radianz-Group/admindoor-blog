@@ -1,0 +1,41 @@
+name: Bug report
+description: Something in the package does not work as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: For security issues, do not file a public issue. See SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: next-version
+    attributes:
+      label: Next.js and React versions
+      placeholder: "next 16.2.9, react 19.1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what happened instead. Include any error output from `next build` or the browser console.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: The smallest config and route files that show the problem, or a link to a repository.
+      render: tsx
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Content source (Admindoor or custom), hosting platform, browser, or other context.

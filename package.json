@@ -1,0 +1,189 @@
+{
+  "name": "admindoor-blog",
+  "version": "1.0.0",
+  "description": "Full-stack SSG blog for Next.js App Router: listing, post, search, OG image and SEO routes, with an Admindoor adapter",
+  "author": "Radianzz Pvt. Ltd. (https://radianzz.com)",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/Radianz-Group/admindoor-blog#readme",
+  "bugs": {
+    "url": "https://github.com/Radianz-Group/admindoor-blog/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Radianz-Group/admindoor-blog.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "src/styles",
+    "CHANGELOG.md",
+    "NOTICE"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./constants": {
+      "import": {
+        "types": "./dist/constants/index.d.ts",
+        "default": "./dist/constants/index.js"
+      },
+      "require": {
+        "types": "./dist/constants/index.d.cts",
+        "default": "./dist/constants/index.cjs"
+      }
+    },
+    "./adapters/admindoor": {
+      "import": {
+        "types": "./dist/adapters/admindoor/index.d.ts",
+        "default": "./dist/adapters/admindoor/index.js"
+      },
+      "require": {
+        "types": "./dist/adapters/admindoor/index.d.cts",
+        "default": "./dist/adapters/admindoor/index.cjs"
+      }
+    },
+    "./seo": {
+      "import": {
+        "types": "./dist/seo/index.d.ts",
+        "default": "./dist/seo/index.js"
+      },
+      "require": {
+        "types": "./dist/seo/index.d.cts",
+        "default": "./dist/seo/index.cjs"
+      }
+    },
+    "./components": {
+      "import": {
+        "types": "./dist/components/index.d.ts",
+        "default": "./dist/components/index.js"
+      },
+      "require": {
+        "types": "./dist/components/index.d.cts",
+        "default": "./dist/components/index.cjs"
+      }
+    },
+    "./next": {
+      "import": {
+        "types": "./dist/next/index.d.ts",
+        "default": "./dist/next/index.js"
+      },
+      "require": {
+        "types": "./dist/next/index.d.cts",
+        "default": "./dist/next/index.cjs"
+      }
+    },
+    "./next/redirects": {
+      "import": {
+        "types": "./dist/next/redirects.d.ts",
+        "default": "./dist/next/redirects.js"
+      },
+      "require": {
+        "types": "./dist/next/redirects.d.cts",
+        "default": "./dist/next/redirects.cjs"
+      }
+    },
+    "./styles/blog.css": "./src/styles/blog.css"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build:example": "pnpm build && pnpm --filter minimal-next-app build",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "@orama/orama": "^3.1.18",
+    "@orama/stemmers": "^3.1.18",
+    "@orama/stopwords": "^3.1.18",
+    "@radix-ui/react-accordion": "^1.2.12",
+    "@radix-ui/react-dialog": "^1.1.23",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@tiptap/core": "^3.26.0",
+    "@tiptap/extension-image": "^3.26.0",
+    "@tiptap/extension-table": "^3.27.1",
+    "@tiptap/extension-table-cell": "^3.27.1",
+    "@tiptap/extension-table-header": "^3.27.1",
+    "@tiptap/extension-table-row": "^3.27.1",
+    "@tiptap/html": "^3.26.0",
+    "@tiptap/pm": "^3.26.0",
+    "@tiptap/starter-kit": "^3.26.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "sanitize-html": "^2.17.4",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^3.25.76"
+  },
+  "peerDependencies": {
+    "lucide-react": ">=0.400.0",
+    "next": ">=16.0.0",
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0",
+    "sharp": ">=0.33.0"
+  },
+  "peerDependenciesMeta": {
+    "sharp": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@types/node": "^22.15.29",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "@types/sanitize-html": "^2.16.1",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "globals": "^16.2.0",
+    "lucide-react": "^0.400.0",
+    "next": "^16.2.9",
+    "prettier": "^3.5.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sharp": "^0.34.5",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.1",
+    "vitest": "^3.2.1"
+  },
+  "keywords": [
+    "nextjs",
+    "next.js",
+    "app-router",
+    "blog",
+    "ssg",
+    "static-site",
+    "seo",
+    "json-ld",
+    "open-graph",
+    "tiptap",
+    "admindoor",
+    "react"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}

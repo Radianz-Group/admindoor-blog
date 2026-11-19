@@ -1,0 +1,800 @@
+{
+  "blogs": [
+    {
+      "urlSlug": "structured-finance-outlook-2025",
+      "title": "Structured Finance Outlook for 2025: What Mid-Market Borrowers Should Watch",
+      "excerpt": "Rate cuts, tighter bank appetite, and more bespoke structures are reshaping how growth companies access capital. Here is what finance teams should plan for this year.",
+      "publishedAt": "2025-02-18T00:00:00.000Z",
+      "author": {
+        "name": "Priya Sharma",
+        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=128&h=128&fit=crop&crop=face",
+        "about": "Director, Debt Advisory. Priya advises mid-market companies on refinancing, acquisition finance, and capital structure reviews."
+      },
+      "seo": {
+        "title": "Structured Finance Outlook 2025",
+        "description": "A practical view of structured finance trends for mid-market borrowers in 2025.",
+        "primaryTopic": "Structured Finance, Debt Advisory, and Mid-Market Capital Markets",
+        "featuredImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=675&fit=crop",
+        "tags": ["structured finance", "debt advisory", "mid-market"],
+        "summary": "Mid-market borrowers face a barbell market in 2025: plain working-capital lines remain accessible, but complex structures need stronger cash-flow proof and earlier lender outreach.",
+        "targetQuery": "What should mid-market borrowers expect from structured finance in 2025?",
+        "schemaType": "BlogPosting",
+        "keyTakeaways": [
+          "Lenders are prioritising cash-flow visibility over growth narratives alone.",
+          "Covenant-lite structures are harder to secure without scale or sponsor backing.",
+          "Documentation timelines are lengthening—start lender conversations earlier.",
+          "Club deals and syndication are increasingly common for mid-market ticket sizes."
+        ],
+        "faqs": [
+          {
+            "question": "Who is this outlook most relevant for?",
+            "answer": "CFOs and founders at companies with ₹50–500 crore revenue evaluating debt or hybrid capital."
+          },
+          {
+            "question": "Are structured facilities still available for first-time borrowers?",
+            "answer": "Yes, but expect tighter covenants, shorter initial tenors, and more detailed monthly reporting packs than in 2021–2022."
+          },
+          {
+            "question": "How early should we start a refinancing or new mandate?",
+            "answer": "For maturities inside 18 months, begin lender dialogue at least six months ahead. Complex structures may need longer."
+          },
+          {
+            "question": "What data do lenders scrutinise most in 2025?",
+            "answer": "Recurring revenue quality, customer concentration, working-capital seasonality, and credible forward cash forecasts with downside cases."
+          }
+        ],
+        "robotsIndex": true
+      },
+      "content": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "customEmbed",
+            "attrs": { "url": "https://evil.example/unsupported-widget" },
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "This nested paragraph survives even though the parent embed type is unsupported."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Borrowers entered 2025 with more clarity on rates, but less clarity on which lenders will compete for their mandate. The result is a "
+              },
+              {
+                "type": "text",
+                "marks": [{ "type": "bold" }],
+                "text": "barbell market"
+              },
+              {
+                "type": "text",
+                "text": ": plain-vanilla working-capital lines remain accessible, while complex structured solutions require stronger preparation."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This article walks through what we are seeing on live mandates—use it as a reference when you pressure-test your own financing plan."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": { "level": 2 },
+            "content": [{ "type": "text", "text": "Three themes shaping mandates" }]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Shorter tenors with extension options instead of long-dated bullet structures."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Greater emphasis on recurring revenue quality and customer concentration."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "More club deals as individual banks manage sector exposure limits."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": { "level": 3 },
+            "content": [
+              { "type": "text", "text": "What “good” looks like in a lender pack" }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Three-year historical financials with "
+                      },
+                      {
+                        "type": "text",
+                        "marks": [{ "type": "italic" }],
+                        "text": "clear"
+                      },
+                      {
+                        "type": "text",
+                        "text": " normalisation schedules for non-recurring items."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Monthly cash-flow bridge for the last 12 months plus a 12-month forward view."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Facility use-of-proceeds tied to measurable milestones—not generic “growth capital”."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The best-prepared borrowers treat lender updates as an ongoing rhythm, not a one-off data dump at signing."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              { "type": "text", "text": "For a deeper checklist, see the " },
+              {
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://example.com/resources/borrower-readiness",
+                      "target": "_blank"
+                    }
+                  }
+                ],
+                "text": "borrower readiness guide"
+              },
+              { "type": "text", "text": " on our resources hub." }
+            ]
+          },
+          {
+            "type": "image",
+            "attrs": {
+              "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=675&fit=crop",
+              "alt": "Analyst reviewing financial charts on screen"
+            }
+          },
+          {
+            "type": "heading",
+            "attrs": { "level": 2 },
+            "content": [{ "type": "text", "text": "Sample facility comparison" }]
+          },
+          {
+            "type": "table",
+            "content": [
+              {
+                "type": "tableRow",
+                "content": [
+                  {
+                    "type": "tableHeader",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [{ "type": "text", "text": "Facility" }]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableHeader",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [{ "type": "text", "text": "Typical tenor" }]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableHeader",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [{ "type": "text", "text": "Covenant intensity" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableRow",
+                "content": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [{ "type": "text", "text": "Working capital" }]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [{ "type": "text", "text": "12–24 months" }]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [{ "type": "text", "text": "Moderate" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableRow",
+                "content": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [{ "type": "text", "text": "Acquisition finance" }]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [{ "type": "text", "text": "3–5 years" }]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [{ "type": "text", "text": "Higher" }]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": { "level": 2 },
+            "content": [{ "type": "text", "text": "Practical next steps" }]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If you are within 18 months of a maturity or evaluating acquisition finance, start with a single question: "
+              },
+              {
+                "type": "text",
+                "marks": [{ "type": "bold" }],
+                "text": "which lenders have appetite for your sector and ticket size today?"
+              },
+              {
+                "type": "text",
+                "text": " Everything else—model updates, covenant headroom, collateral discussions—gets easier once that map is clear."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "urlSlug": "debt-advisory-refinancing-playbook",
+      "title": "A Refinancing Playbook for Founder-Led Businesses",
+      "excerpt": "When your existing facility is maturing in the next 12–18 months, sequencing lender outreach, data-room prep, and covenant negotiation can materially improve terms.",
+      "publishedAt": "2025-01-08T00:00:00.000Z",
+      "updatedAt": "2025-01-22T00:00:00.000Z",
+      "author": {
+        "name": "Arjun Mehta",
+        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=128&h=128&fit=crop&crop=face",
+        "about": "Vice President, Debt Advisory. Arjun has executed refinancing mandates across manufacturing, healthcare, and business services."
+      },
+      "seo": {
+        "title": "Refinancing Playbook for Founder-Led Businesses",
+        "description": "How to prepare for a refinancing process without disrupting day-to-day operations.",
+        "primaryTopic": "Debt Advisory",
+        "featuredImage": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=675&fit=crop",
+        "tags": ["refinancing", "founders", "lenders"],
+        "summary": "Begin refinancing prep six months out, clean the numbers before lender outreach, and compare full term sheets—not just headline rates.",
+        "keyTakeaways": [
+          "Start refinancing work six months before maturity—not six weeks.",
+          "Normalise EBITDA and cash flow before sharing teasers with lenders.",
+          "Run a structured term-sheet comparison; headline rate is rarely the full story."
+        ],
+        "faqs": [
+          {
+            "question": "Can we talk to lenders before our maturity date?",
+            "answer": "Yes. Most lenders expect exploratory conversations 9–12 months ahead for mid-market facilities. Early dialogue improves optionality."
+          },
+          {
+            "question": "What slows refinancing processes down most?",
+            "answer": "Incomplete data rooms and unclear use-of-proceeds. Fixing those before outreach typically shortens timelines by several weeks."
+          },
+          {
+            "question": "Should founders join lender meetings?",
+            "answer": "For founder-led businesses, yes—a credible growth narrative from leadership often matters as much as the numbers."
+          }
+        ],
+        "robotsIndex": true
+      },
+      "content": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Founder-led businesses often delay refinancing work until a maturity date is within sight. That compresses negotiating leverage. A better approach is to treat refinancing as a "
+              },
+              {
+                "type": "text",
+                "marks": [{ "type": "bold" }],
+                "text": "six-month project"
+              },
+              { "type": "text", "text": " with defined milestones." }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": { "level": 2 },
+            "content": [{ "type": "text", "text": "Suggested timeline" }]
+          },
+          {
+            "type": "orderedList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "T-6 months: validate historical cash flows and normalise one-off items."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "T-4 months: shortlist lenders and share a concise teaser."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "T-2 months: run a structured data room and term-sheet review."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": { "level": 3 },
+            "content": [{ "type": "text", "text": "Documents to prepare early" }]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Audited accounts and management accounts (last 3 years)."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Debt schedule with covenants, amortisation, and security summary."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Cap table and shareholder agreements if private equity is involved."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Lenders reward clarity. A concise teaser with honest risk flags beats a polished deck that omits known issues."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "urlSlug": "valuation-updates-for-transactions",
+      "title": "Valuation Updates That Actually Help Close Transactions",
+      "excerpt": "Boards often commission valuations that satisfy compliance but do not help negotiators. The difference is in assumptions, comparables, and how findings are presented to counterparties.",
+      "publishedAt": "2024-11-24T00:00:00.000Z",
+      "author": {
+        "name": "Elena Vasquez",
+        "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=128&h=128&fit=crop&crop=face",
+        "about": "Head of Valuations. Elena leads fairness opinions and purchase-price allocation work for cross-border deals."
+      },
+      "seo": {
+        "title": "Valuation Updates for Transactions",
+        "description": "Practical guidance on valuations that support negotiation—not just documentation.",
+        "primaryTopic": "Valuations",
+        "featuredImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=675&fit=crop",
+        "tags": ["valuations", "M&A", "fairness opinion"],
+        "keyTakeaways": [
+          "Align valuation purpose with the audience—board, lender, or counterparty.",
+          "Sensitivity tables matter more than a single point estimate.",
+          "Update trading comps closer to signing, not only at mandate start."
+        ],
+        "faqs": [
+          {
+            "question": "When do we need a fairness opinion?",
+            "answer": "Typically for related-party transactions, certain board fiduciary processes, or when lenders require independent support for collateral values."
+          },
+          {
+            "question": "How often should comps be refreshed?",
+            "answer": "For active deals, refresh trading and transaction comps within 30 days of signing—or sooner if markets move sharply."
+          }
+        ],
+        "robotsIndex": true
+      },
+      "content": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A transaction-ready valuation explains "
+              },
+              { "type": "text", "marks": [{ "type": "bold" }], "text": "why" },
+              {
+                "type": "text",
+                "text": " a range is reasonable, not only what the range is. That distinction changes how investors and sellers engage with your numbers."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": { "level": 2 },
+            "content": [{ "type": "text", "text": "Common valuation methods" }]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Discounted cash flow with explicit scenario and sensitivity tables."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Trading comparables adjusted for growth, margin, and liquidity differences."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Precedent transactions where deal terms are genuinely comparable."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Present all three where possible—even if one method is weighted more heavily in the final conclusion."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "urlSlug": "working-capital-before-fundraise",
+      "title": "Working Capital Discipline Before You Raise Growth Capital",
+      "excerpt": "Investors reward companies that demonstrate cash conversion before scale. These operating metrics are the fastest way to improve perceived credit quality—without changing your product roadmap.",
+      "publishedAt": "2024-10-03T00:00:00.000Z",
+      "author": {
+        "name": "Rahul Khanna",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=128&h=128&fit=crop&crop=face",
+        "about": "Principal, Structured Finance. Rahul works with growth-stage companies on cash forecasting and facility sizing."
+      },
+      "seo": {
+        "title": "Working Capital Before Fundraise",
+        "description": "Operating improvements that strengthen your position before a growth capital process.",
+        "primaryTopic": "Working Capital",
+        "tags": ["working capital", "fundraising", "cash flow"]
+      },
+      "content": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This post intentionally has no featured image in the API payload. Cards without "
+              },
+              {
+                "type": "text",
+                "marks": [{ "type": "italic" }],
+                "text": "seo.featuredImage"
+              },
+              {
+                "type": "text",
+                "text": " render the neutral placeholder state—useful when your CMS entry is still being finalised."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "urlSlug": "regulatory-roundup-q3-2024",
+      "title": "Regulatory Roundup: Credit Reporting and Disclosure Changes in Q3 2024",
+      "excerpt": "A concise summary of disclosure and reporting changes relevant to private borrowers and unlisted issuers. No author profile on this entry—another common CMS pattern.",
+      "publishedAt": "2024-08-19T00:00:00.000Z",
+      "seo": {
+        "title": "Regulatory Roundup Q3 2024",
+        "description": "Quarterly regulatory summary for private market borrowers.",
+        "primaryTopic": "Regulation",
+        "featuredImage": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=675&fit=crop",
+        "robotsIndex": true
+      },
+      "content": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Regulatory updates can shift covenant definitions and reporting cadence. This article demonstrates a card with a hero image and category, but "
+              },
+              { "type": "text", "marks": [{ "type": "bold" }], "text": "no author" },
+              { "type": "text", "text": " in the byline." }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "urlSlug": "ma-integration-financing-basics",
+      "title": "M&A Integration Financing: Bridging the Gap Between Signing and Synergies",
+      "excerpt": "Integration costs arrive before synergy targets materialise. Bridge facilities, earn-out structures, and vendor support can smooth the first 18 months after close if they are planned early.",
+      "publishedAt": "2024-06-12T00:00:00.000Z",
+      "author": {
+        "name": "Sofia Chen",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=128&h=128&fit=crop&crop=face",
+        "about": "Associate Director, Transaction Advisory. Sofia advises on post-merger financing and integration cash planning."
+      },
+      "seo": {
+        "title": "M&A Integration Financing Basics",
+        "description": "Financing approaches for the integration period after an acquisition.",
+        "primaryTopic": "M&A",
+        "featuredImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=675&fit=crop",
+        "tags": ["M&A", "integration", "bridge financing"],
+        "robotsIndex": true
+      },
+      "content": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Buyers often model synergies on a spreadsheet but fund integration on a calendar. Closing that gap is where integration financing earns its keep."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              { "type": "text", "text": "Learn more in our " },
+              {
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://example.com/resources/ma-integration",
+                      "target": "_blank"
+                    }
+                  }
+                ],
+                "text": "integration checklist"
+              },
+              { "type": "text", "text": "." }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Invalid Post",
+      "excerpt": "Missing slug and published date — filtered out during normalization."
+    }
+  ]
+}

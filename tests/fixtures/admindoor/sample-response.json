@@ -1,0 +1,79 @@
+{
+  "blogs": [
+    {
+      "urlSlug": "first-post",
+      "title": "First Post",
+      "excerpt": "An introductory article about structured finance.",
+      "publishedAt": "2024-01-15T00:00:00.000Z",
+      "updatedAt": "2024-02-01T00:00:00.000Z",
+      "author": {
+        "name": "Jane Doe",
+        "image": "https://cdn.example.com/jane.jpg",
+        "about": "Finance writer"
+      },
+      "seo": {
+        "title": "First Post SEO Title",
+        "description": "SEO description for the first post.",
+        "featuredImage": "https://cdn.example.com/featured.jpg",
+        "tags": ["finance", "advisory", "related:second-post"],
+        "keyTakeaways": ["Point one", "Point two"],
+        "faqs": [
+          {
+            "question": "What is this post about?",
+            "answer": "Structured finance basics."
+          }
+        ],
+        "robotsIndex": true
+      },
+      "content": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [{ "type": "text", "text": "Hello world." }]
+          }
+        ]
+      }
+    },
+    {
+      "urlSlug": "second-post",
+      "title": "Second Post",
+      "excerpt": "A newer article with rich content.",
+      "publishedAt": "2024-03-10T00:00:00.000Z",
+      "content": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": { "level": 2 },
+            "content": [{ "type": "text", "text": "Section heading" }]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              { "type": "text", "text": "Read more at " },
+              {
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://example.com/resource",
+                      "target": "_blank"
+                    }
+                  }
+                ],
+                "text": "this resource"
+              },
+              { "type": "text", "text": "." }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Invalid Post",
+      "excerpt": "Missing slug and published date."
+    }
+  ]
+}

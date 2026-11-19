@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Scan admindoor-blog component classes (workspace + installed package) */
+@source "../../node_modules/admindoor-blog/src";
+@source "../../node_modules/admindoor-blog/dist";
+@source "../../../../src/components";
+
+/*
+ * Demo brand tokens (chrome only — TipTap .blog-content is unchanged).
+ * Override any --blog-* variable from admindoor-blog/styles/blog.css.
+ */
+.blog-root {
+  --blog-accent: #0f766e;
+  --blog-accent-muted: #ccfbf1;
+  --blog-accent-fg: #115e59;
+  --blog-radius: 1rem;
+  --blog-radius-md: 0.5rem;
+}
