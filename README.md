@@ -6,7 +6,7 @@
 
 Full-stack SSG blog package for the Next.js App Router. Supply a config plus listing, post and OG image route files; the package handles data fetching, TipTap rendering, SEO metadata, JSON-LD, UI and static generation.
 
-Built and maintained by [Radianzz Pvt. Ltd.](https://radianzz.com) as the blog setup kit for **Admindoor**, our content management platform. Admindoor is optional: the package ships an Admindoor adapter, but any source that implements `BlogContentSource` works (see [Content source](#1-blog-config)).
+Built and maintained by [Radianzz](https://radianzz.com) as the blog setup kit for [Admindoor](https://admindoor.com), our content management platform. Admindoor is optional: the package ships an Admindoor adapter, but any source that implements `BlogContentSource` works (see [Content source](#1-blog-config)).
 
 Requires **Node ≥ 20** and **Next.js ≥ 16**.
 

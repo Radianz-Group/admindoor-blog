@@ -13,7 +13,7 @@
   "dependencies": {
     "admindoor-blog": "workspace:*",
     "lucide-react": "^0.400.0",
-    "next": "^16.2.9",
+    "next": "^16.4.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sharp": "^0.34.5"

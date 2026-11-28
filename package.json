@@ -160,7 +160,7 @@
     "eslint-config-prettier": "^10.1.5",
     "globals": "^16.2.0",
     "lucide-react": "^0.400.0",
-    "next": "^16.2.9",
+    "next": "^16.4.6",
     "prettier": "^3.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
